@@ -9,7 +9,8 @@ The model is trained on the FER-2013 dataset which was published on Internationa
 ## Methodology
 1. **Load and preprocess the dataset:** Use the Fer2013 dataset, which contains images of faces categorized into seven emotions (angry, disgusted, fearful, happy, neutral, sad, surprised). Load the images and their corresponding labels, then preprocess the images by resizing them to the appropriate size and normalizing their pixel values.
 2. **Performing Exploratory Data Analysis (EDA) to the given dataset:**
-![download](https://user-images.githubusercontent.com/67580321/227176248-1eccef50-7fb2-46b8-8122-1727b1a1224f.png)
+![My Image](eda.png)
+
 
         **(0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral)**
 
