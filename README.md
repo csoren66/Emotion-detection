@@ -3,14 +3,60 @@ The task is to categorize each face based on the emotion shown in the facial exp
 
 
 ## Methodology
-1. Load the FER2013 dataset
-2. Split the dataset into training, validation, and testing sets
-3. Preprocess the data (e.g., resizing the images, converting to grayscale, normalization)
-4. Define the architecture of the neural network (e.g., convolutional neural network)
-5. Train the model on the training set
-6. Evaluate the model on the validation set
-7. Test the model on the testing set
+1. **Load and preprocess the dataset:** Use the Fer2013 dataset, which contains images of faces categorized into seven emotions (angry, disgusted, fearful, happy, neutral, sad, surprised). Load the images and their corresponding labels, then preprocess the images by resizing them to the appropriate size and normalizing their pixel values.
+2. **Split the dataset into training, validation, and test sets:** divide the dataset into three sets - training, validation, and test sets. The training set is used to train the model, the validation set is used to evaluate the model's performance during training.
+4. **Define the architecture of the neural network (e.g., convolutional neural network)**
 
+
+        _________________________________________________________________
+        Layer (type)                Output Shape              Param #    
+        =================================================================
+        conv2d (Conv2D)             (None, 46, 46, 64)        640       
+                                                                 
+        conv2d_1 (Conv2D)           (None, 44, 44, 64)        36928     
+                                                                 
+        max_pooling2d (MaxPooling2D)  (None, 22, 22, 64)       0         
+                                                                                                                            
+        dropout_2 (Dropout)         (None, 22, 22, 64)        0         
+                                                                 
+        conv2d_2 (Conv2D)           (None, 20, 20, 64)        36928     
+                                                                 
+        conv2d_3 (Conv2D)           (None, 18, 18, 64)        36928     
+                                                                 
+        max_pooling2d_1 (MaxPooling  (None, 9, 9, 64)         0         
+        2D)                                                             
+                                                                 
+        dropout_3 (Dropout)         (None, 9, 9, 64)          0         
+                                                                 
+        conv2d_4 (Conv2D)           (None, 7, 7, 128)         73856     
+                                                                 
+        conv2d_5 (Conv2D)           (None, 5, 5, 128)         147584    
+                                                                 
+        max_pooling2d_2 (MaxPooling  (None, 2, 2, 128)        0         
+        2D)                                                             
+                                                                 
+        flatten (Flatten)           (None, 512)               0         
+                                                                 
+        dense_1 (Dense)             (None, 1024)              525312    
+                                                                 
+        dropout_4 (Dropout)         (None, 1024)              0         
+                                                                 
+        dense_2 (Dense)             (None, 1024)              1049600   
+                                                                 
+        dropout_5 (Dropout)         (None, 1024)              0         
+                                                                 
+        dense_3 (Dense)             (None, 7)                 7175      
+                                                                 
+        =================================================================
+        Total params: 1,914,951
+        Trainable params: 1,914,951
+        Non-trainable params: 0
+        _________________________________________________________________
+
+
+5. **Train the model on the training set**
+6. **Evaluate the model on the validation set**
+7. **Test the model on the testing set**
 
 ## Dataset & Description
 
