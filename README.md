@@ -4,7 +4,10 @@ The task is to categorize each face based on the emotion shown in the facial exp
 
 ## Methodology
 1. **Load and preprocess the dataset:** Use the Fer2013 dataset, which contains images of faces categorized into seven emotions (angry, disgusted, fearful, happy, neutral, sad, surprised). Load the images and their corresponding labels, then preprocess the images by resizing them to the appropriate size and normalizing their pixel values.
-2. **Split the dataset into training, validation, and test sets:** divide the dataset into three sets - training, validation, and test sets. The training set is used to train the model, the validation set is used to evaluate the model's performance during training.
+2. **Performing Exploratory Data Analysis (EDA) to the given dataset:**
+![download](https://user-images.githubusercontent.com/67580321/227176248-1eccef50-7fb2-46b8-8122-1727b1a1224f.png)
+**(0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral)**
+3. **Split the dataset into training, validation, and test sets:** divide the dataset into three sets - training, validation, and test sets. The training set is used to train the model, the validation set is used to evaluate the model's performance during training.
 4. **Define the architecture of the neural network (e.g., convolutional neural network)**
 
 
