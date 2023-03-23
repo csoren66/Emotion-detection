@@ -85,3 +85,9 @@ The training set consists of 28,709 examples and the public test set consists of
 - [Very deep convolutional networks for large-scale image recognition](https://arxiv.org/pdf/1409.1556.pdf) by Karen Simonyan & Andrew Zisserman
 
 - [Challenges in Representation Learning: A report on three machine learning contests](https://arxiv.org/pdf/1307.0414v1.pdf) by Ian J. Goodfellow, Dumitru Erhan, Pierre Luc Carrier, Aaron Courville, Mehdi Mirza, Ben Hamner, Will Cukierski, Yichuan Tang, David Thaler, Dong-Hyun Lee, Yingbo Zhou, Chetan Ramaiah, Fangxiang Feng, Ruifan Li, Xiaojie Wang, Dimitris Athanasakis, John Shawe-Taylor, Maxim Milakov, John Park, Radu Ionescu, Marius Popescu, Cristian Grozea, James Bergstra, Jingjing Xie, Lukasz Romaszko, Bing Xu, Zhang Chuang, and Yoshua Bengio
+
+
+## Contributer
+[Chandan Soren](https://github.com/csoren66)
+
+## Demo
